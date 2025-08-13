@@ -1,0 +1,74 @@
+[
+  {
+    "slide_title": "61쪽 개념 마무리",
+    "number": "1",
+    "question": "다음 중 다각형에 대한 설명으로 옳지 않은 것을 모두 고르면?",
+    "choices": [
+      "① 변의 개수가 가장 적은 다각형은 삼각형이다.",
+      "② 사각형의 한 꼭짓점에서 그을 수 있는 대각선의 개수는 2이다.",
+      "③ 다각형에서 변의 개수와 꼭짓점의 개수는 항상 같다.",
+      "④ 다섯 개의 선분으로 둘러싸인 다각형은 오각형이다.",
+      "⑤ 다각형의 두 꼭짓점을 이은 선분을 대각선이라 한다."
+    ],
+    "included_picture": null,
+    "source_page": 0
+  },
+  {
+    "slide_title": "61쪽 개념 마무리",
+    "number": "2",
+    "question": "다음 중 다각형과 대각선의 개수가 잘못 짝 지어진 것은?",
+    "choices": [
+      "① 사각형: 2",
+      "② 오각형: 5",
+      "③ 십이각형: 52",
+      "④ 구각형: 27",
+      "⑤ 십오각형: 90"
+    ],
+    "included_picture": null,
+    "source_page": 0
+  },
+  {
+    "slide_title": "61쪽 개념 마무리",
+    "number": "3",
+    "question": "팔각형은 a개의 선분으로 둘러싸인 다각형이며, 꼭짓점의 개수는 b, 대각선의 개수는 c이다. 이때, a+b+c° 값은?",
+    "choices": [
+      "① 16",
+      "② 24",
+      "③ 36",
+      "④ 48",
+      "⑤ 52"
+    ],
+    "included_picture": null,
+    "source_page": 0
+  },
+  {
+    "slide_title": "61쪽 개념 마무리",
+    "number": "4",
+    "question": "한 꼭짓점에서 그을 수 있는 대각선의 개수가 8인 다각형의 이름을 쓰고, 이 다각형의 대각선의 개수를 구하시오.",
+    "choices": [],
+    "included_picture": null,
+    "source_page": 0
+  },
+  {
+    "slide_title": "61쪽 개념 마무리",
+    "number": "5",
+    "question": "다음 그림과 같은 팔각형의 꼭짓점 중에서 점 C와 대각선으로 연결되지 않는 꼭짓점의 개수는? (단, 점 C는 제외)",
+    "choices": [
+      "① 1",
+      "② 2",
+      "③ 3",
+      "④ 4",
+      "⑤ 5"
+    ],
+    "included_picture": "processed_assets/problem_5_picture.png",
+    "source_page": 0
+  },
+  {
+    "slide_title": "61쪽 개념 마무리",
+    "number": "6",
+    "question": "다음 그림과 같이 7개의 공장이 있고 이웃하는 공장 사이에만 도로가 연결되어 있다. 서로 다른 공장 사이에 직접 왕래할 수 있도록 도로를 건설할 때, 추가해야 하는 도로의 개수를 구하시오.",
+    "choices": [],
+    "included_picture": "processed_assets/problem_6_picture.png",
+    "source_page": 0
+  }
+]
