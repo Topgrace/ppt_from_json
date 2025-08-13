@@ -41,6 +41,15 @@ QUESTION_WIDTH = Cm(25)
 QUESTION_MIN_HEIGHT = Cm(2.0)  # 최소 높이로 변경
 QUESTION_FONT_SIZE = Pt(28)
 
+# --- [Context 박스 설정 추가] ---
+CONTEXT_LEFT = Cm(3.5)
+CONTEXT_WIDTH = Cm(15)
+CONTEXT_FONT_SIZE = Pt(22)
+CONTEXT_BORDER_COLOR = RGBColor(255, 0, 0) # 빨간색
+CONTEXT_BORDER_WIDTH = Pt(2.0)
+CONTEXT_MARGIN = Cm(0.3) # 내부 여백
+# --- [추가 끝] ---
+
 # 선택지
 CHOICES_LEFT = Cm(3.5)
 CHOICES_WIDTH = Cm(30)
@@ -131,6 +140,39 @@ def create_ppt_from_problems(data, output_filename):
 
         next_element_top = question_box.top + question_box.height + Cm(0.5)
 
+        # --- [Context 박스 생성 로직 추가] ---
+        context_text = problem.get("context")
+        if context_text:
+            context_box = slide.shapes.add_textbox(CONTEXT_LEFT, next_element_top, CONTEXT_WIDTH, Cm(1))
+            
+            # 텍스트 박스 채우기 없음
+            context_box.fill.background()
+
+            # 텍스트 박스 테두리 설정
+            line = context_box.line
+            line.color.rgb = CONTEXT_BORDER_COLOR
+            line.width = CONTEXT_BORDER_WIDTH
+
+            # 텍스트 프레임 설정
+            tf_context = context_box.text_frame
+            tf_context.clear()
+            p_context = tf_context.paragraphs[0]
+            apply_formatting(p_context, context_text, font_size=CONTEXT_FONT_SIZE)
+            
+            # 내부 여백 설정
+            tf_context.margin_bottom = CONTEXT_MARGIN
+            tf_context.margin_top = CONTEXT_MARGIN
+            tf_context.margin_left = CONTEXT_MARGIN
+            tf_context.margin_right = CONTEXT_MARGIN
+            
+            # 자동 크기 조정
+            tf_context.word_wrap = True
+            tf_context.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
+
+            # 다음 요소 위치 업데이트
+            next_element_top = context_box.top + context_box.height + Cm(0.5)
+        # --- [추가 끝] ---
+        
         if problem.get("choices"):
             choice_top = next_element_top
             for choice in problem["choices"]:

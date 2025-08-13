@@ -70,5 +70,20 @@
     "choices": [],
     "included_picture": "processed_assets/problem_6_picture.png",
     "source_page": 0
-  }
+  },
+  {
+  "slide_title": "1차 방정식의 활용",
+  "number": "13",
+  "question": "다음 상황에 대한 설명으로 옳지 않은 것은?",
+  "context": "원가 3000원에 20 %의 이익을 붙여 정가를 정하고, 정가의 5 %를 할인하여 팔았더니 원가의 14 %의 이익을 얻었다.",
+  "choices": [
+    "① 원가에서 600원을 더해 정가를 정했다.",
+    "② 정가에서 150원을 할인해서 판매가를 정했다.",
+    "③ 판매가는 3420원이다.",
+    "④ 원가의 14 %는 420원이다.",
+    "⑤ 판매 이익은 420원이다."
+  ],
+  "included_picture": null,
+  "source_page": 0
+}
 ]
