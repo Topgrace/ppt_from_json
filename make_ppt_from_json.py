@@ -66,12 +66,12 @@ def apply_formatting(paragraph, text, default_font=KOREAN_FONT, math_font=MATH_F
         if not part: continue
         is_underline_part = part in underline_words
         
-        segments = re.split(r'([a-zA-Z0-9\+\-\=°\(\):]+)', part)
+        segments = re.split(r'([a-zA-Z0-9\+\-\=°\(\)]+)', part)
 
         for segment_text in segments:
             if not segment_text: continue
             
-            is_math = bool(re.match(r'^[a-zA-Z0-9\+\-\=°\(\):]+$', segment_text))
+            is_math = bool(re.match(r'^[a-zA-Z0-9\+\-\=°\(\)]+$', segment_text))
             
             run = paragraph.add_run()
             run.text = segment_text
